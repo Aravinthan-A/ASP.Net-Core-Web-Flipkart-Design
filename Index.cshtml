@@ -1,0 +1,233 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="~/stylesheet.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-xl Marra">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="Image">
+                        <img class="" src="~/Image/Logo.png" />
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a >
+                        <input class="Search" type="search" placeholder="Search for products,brands and more"  />
+                    </a>
+                </li>
+                <li>
+                    <button class="Buttons">Login</button>
+                </li>
+                <li>
+                    <a>
+                        <p class="Textfont fw-bold">Become a Seller</p>
+                    </a>
+                </li>
+                <li class="Dropdown">
+                    
+                    <button class="btn text-white fw-bold  border-0 dropdown-toggle" data-bs-toggle="dropdown">More</button>
+                </li>
+              <li>
+                    <a><i class="fa-sharp fa-solid fa-cart-shopping fa-2xs" style="color: #001c40;"></i></a>
+                    <p class="text-white Carts fw-bold">Cart</p>
+              </li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-xl Collection">
+            <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="navbar-item grocery ">
+                    <a>
+                        <img class="arrange" src="~/Image/Gro.png" />
+                        <p class=" gro">Grocery</p>
+                    </a>
+                </li>
+                <li class="navbar-item ">
+                    <a>
+                        <img class="Lining" src="~/Image/Mobile.png" />
+                        <p class="mobile ">Mobiles</p>
+                    </a>
+                </li>
+                <li class="navbar-item ">
+                    <a>
+                        <img class="Lining" src="~/Image/Fashion.png" />
+                        <div class=" dropdown Fash">
+                            <p class="dropdown-toggle  " data-bs-toggle="dropdown">Fashion</p>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item"><a style="font-size:14px;font-weight:bold">Fashion </a></li>
+                                <li class="dropdown-item"><a href=""> Mens Topwear </a></li>
+                                <li class="dropdown-item"><a href=""> Mens Bottom wear </a></li>
+                                <li class="dropdown-item"><a href=""> Womens Topwear </a></li>
+                                <li class="dropdown-item"><a href=""> Womens Bottonwear </a></li>
+                                <li class="dropdown-item"><a href=""> Jeans  </a></li>
+                                <li class="dropdown-item"><a href=""> Shirts </a></li>
+                                <li class="dropdown-item"><a href=""> Casuals </a></li>
+                                <li class="dropdown-item"><a href=""> Formals </a></li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a>
+                        <img class="Lining" src="~/Image/Electronics.png" />
+                        <div class=" dropdown">
+                            <p class="dropdown-toggle  Elec" data-bs-toggle="dropdown">Electronics</p>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item"><a style="font-size:14px;font-weight:bold">Electronics </a></li>
+                                <li class="dropdown-item"><a href=""> Mobiles </a></li>
+                                <li class="dropdown-item"><a href=""> Laptop </a></li>
+                                <li class="dropdown-item"><a href=""> Headphones </a></li>
+                                <li class="dropdown-item"><a href=""> Earbuds </a></li>
+                                <li class="dropdown-item"><a href=""> Chargers  </a></li>
+                                <li class="dropdown-item"><a href=""> Datacables </a></li>
+                                <li class="dropdown-item"><a href=""> Fans </a></li>
+                                <li class="dropdown-item"><a href=""> Stablilizer </a></li>
+                            </ul>
+                        </div>
+                    </a>                
+                </li>
+                <li class="navbar-item">
+                    <a>
+                        <img class="Lining" src="~/Image/Furniture.png" />
+                                                <div class=" dropdown Fur">
+                            <p class="dropdown-toggle" data-bs-toggle="dropdown">Home & furniture</p>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item"><a style="font-size:14px;font-weight:bold">Furniture Studio </a></li>
+                                <li class="dropdown-item"><a href=""> Home Dackor </a></li>
+                                <li class="dropdown-item"><a href=""> Workspace furniture </a></li>
+                                <li class="dropdown-item"><a href=""> Cleaning & Bath </a></li>
+                                <li class="dropdown-item"><a href=""> Furtinure Studio  </a></li>
+                                <li class="dropdown-item"><a href=""> Bedroom Furniture </a></li>
+                                <li class="dropdown-item"><a href=""> Tools & Utility </a></li>
+                                <li class="dropdown-item"><a href=""> Bedroom Furniture </a></li>
+                                <li class="dropdown-item"><a href=""> Kids Furniture </a></li>
+                            </ul>
+                        </div>
+                    </a>                
+                </li>
+                 <li class="navbar-item">
+                     <a>
+                        <img class="Lining" src="~/Image/App.png" />
+                        <p class="Appl">Appliances</p>
+                     </a>                  
+                </li>
+                <li class="navbar-item">
+                    <a>
+                        <img class="Lining" src="~/Image/Travel.png" />
+                        <p class=" Trav">Travel</p>
+                    </a>                  
+                </li>
+                <li class="navbar-item">
+                    <a>
+                        <img class="Lining" src="~/Image/Gift.png" />
+                        <p class=" Topo">Top Offers</p>
+                    </a>                  
+                </li>
+                <li class="navbar-item">
+                    <a>
+                        <img class="Twovhe" src="~/Image/Toys.png" />
+                                            <div class=" dropdown Beau">
+                        <p class="dropdown-toggle " data-bs-toggle="dropdown"> Beauty,Toys & More</p>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item  "><a style="font-size:14px;font-weight:bold">Beauty & Persnol Care </a></li>
+                            <li class="dropdown-item"><a href=""> Men's Grooming </a></li>
+                            <li class="dropdown-item"><a href=""> Foods & Drinks </a></li>
+                            <li class="dropdown-item"><a href=""> Nutrition & Health </a></li>
+                            <li class="dropdown-item"><a href=""> Baby Care  </a></li>
+                            <li class="dropdown-item"><a href=""> Toys & School Supplies  </a></li>
+                            <li class="dropdown-item"><a href=""> Books </a></li>
+                            <li class="dropdown-item"><a href=""> Music </a></li>
+                            <li class="dropdown-item"><a href=""> Sportd & Fitness </a></li>
+                        </ul>
+                    </div>
+                    </a>                
+                </li>
+                <li class="navbar-item">
+                    <a>
+                        <img class="Wheel" src="~/Image/Two.png" />
+                        <div class="dropdown Twowh">
+                            <p class="dropdown-toggle " data-bs-toggle="dropdown">Two Wheelers</p>
+                            <ul class="dropdown-menu ">
+                                <li class="dropdown-item"><a href=""> Petrol Vechiles </a></li>
+                                <li class="dropdown-item"><a href=""> Electrical Vechiles </a></li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            </div>
+    </nav>
+    <div id="demo" class="carousel slide Casrole" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="~/Image/Upper.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="~/Image/Getnow.png" alt="Chicago" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="~/Image/Tele.png" alt="New York" class="d-block" style="width:100%">
+            </div>
+        </div>
+        <button class="carousel-control-prev Casrole " type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon casbut "></span>
+        </button>
+        <button class="carousel-control-next Casrole" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon casLeft"></span>
+        </button>
+   </div>
+    <nav class="navbar navbar-expand-xl Prod bg-white">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class=" Mars">
+                        <h2 class="Lost">Best of<br />Electronics</h2>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a>
+                        <img class="Cam" src="~/Image/Camera.jpeg" />
+                        <p class="Offer">Cameras</p>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <img class="Trim" src="~/Image/Samsung.jpeg" />
+                        <p class="Pia"></p>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <img class="Trim" src="~/Image/Full.jpeg" />
+                        <p class="Offer">Moniters</p>
+                    </a>
+                </li>
+                <li class="Dropdown">
+                    <a>
+                        <img class="Trim" src="~/Image/Electric.jpeg" />
+                        <p class="Offer">Electric Cycle</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+ 
+</body>
+</html>
+
+

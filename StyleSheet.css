@@ -1,0 +1,200 @@
+﻿body {
+}
+.Marra {
+    width: 1365px;
+    margin: 0px 0px 0px -130px;
+    background-color: #2874f0;
+}
+
+.Image {
+    margin: 0px 0px 0px 200px;
+}
+
+.Search {
+    width: 400px;
+    height: 30px;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    background-color: white;
+    font-weight: 200;
+    margin: 0px 0px 0px 10px;
+}
+
+.Buttons {
+    height: 30px;
+    border-block-color: none;
+    margin: 0px 0px 0px 10px;
+    width: 100px;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    background-color: white;
+    color: #2874F0;
+    font-weight: 500;
+}
+
+.Textfont {
+    color: white;
+    margin: 0px 0px 0px 40px;
+}
+
+.Dropdown {
+    margin: -5px 0px 0px 20px;
+}
+
+.Carts {
+    margin: 0px 0px 0px 20px;
+}
+
+.Collection {
+    width: 1365px;
+    margin: 0px 0px 0px -130px;
+    background-color: white;
+    height: 100px;
+    box-shadow: 0px 0px 5px #0000008c;
+}
+
+.Casrole {
+    width: 1365px;
+    margin: 10px 0px 0px -130px;
+}
+
+.casbut {
+    margin: 0px 800px 0px 0px;
+    background-color: darkslategrey;
+}
+
+.casLeft {
+    margin: 0px 0px 0px 1000px;
+    background-color: darkslategrey;
+}
+
+.grocery {
+    margin: 0px 0px 0px 70px;
+}
+
+.arrange {
+    margin: 20px 0px 0px 0px;
+    width: 60px;
+    height: 60px;
+}
+
+.gro {
+    font-weight: 500;
+    font-size: smaller;
+}
+
+.Lining {
+    margin: 20px 0px 0px 40px;
+    width: 60px;
+    height: 60px;
+}
+
+.Twovhe {
+    margin: 20px 0px 0px 80px;
+    width: 60px;
+    height: 60px;
+}
+
+.Wheel {
+    margin: 20px 0px 0px 60px;
+    width: 60px;
+    height: 60px;
+}
+
+.mobile {
+    margin: 0px 0px 0px 45px;
+    font-weight: 500;
+    font-size: smaller;
+}
+
+.Fash {
+    margin: 0px 0px 0px 40px;
+    font-weight: 500;
+    font-size: smaller;
+}
+
+.Elec {
+    margin: 0px 0px 0px 30px;
+    font-weight: 500;
+    font-size: smaller;
+}
+
+.Fur {
+    margin: 0px 0px 0px 20px;
+    font-weight: 500;
+    font-size: smaller;
+}
+
+.Appl {
+    margin: 0px 0px 0px 30px;
+    font-weight: 500;
+    font-size: smaller;
+}
+
+.Trav {
+    margin: 0px 0px 0px 50px;
+    font-weight: 500;
+    font-size: smaller;
+}
+
+.Topo {
+    margin: 0px 0px 0px 40px;
+    font-weight: 500;
+    font-size: smaller;
+}
+
+.Beau {
+    margin: 0px 0px 0px 50px;
+    font-weight: 500;
+    font-size: smaller;
+}
+
+.Twowh {
+    margin: 0px 0px 0px 50px;
+    font-weight: 500;
+    font-size: smaller;
+}
+
+.Toys {
+    margin: 0px 0px 0px 0px;
+}
+
+.Prod {
+    width: 1365px;
+    margin: 0px 0px 0px -130px;
+    height: 200px;
+}
+
+.Mars {
+    margin: 0px 0px 0px 0px;
+    text-decoration: none;
+}
+
+.Lost {
+    margin: 90px 0px 0px 50px;
+    color: black;
+}
+
+.Trim {
+    margin: 80px 0px 0px 75px;
+    font-weight: 300;
+}
+
+.Cam {
+    margin: 70px 0px 0px 55px;
+    font-weight: 300;
+}
+
+.Offer {
+    margin: 0px 0px 45px 140px;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.Pia {
+    margin: -500px 0px 0px 140px;
+}
