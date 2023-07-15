@@ -1,233 +1,375 @@
-﻿@{
+@model Nakuri.Models.ErrorViewModel;
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers;
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title></title>
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="~/stylesheet.css" rel="stylesheet" />
-</head>
-<body>
-    <nav class="navbar navbar-expand-xl Marra">
-        <div class="container-fluid">
-            <ul class="navbar-nav">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/08bef55afd.js" crossorigin="anonymous"></script>
+<title>@ViewData["Title"] - Nakuri</title>
+<style>
+    .Margin {
+        margin: 0px 0px 0px 800px;
+    }
+    .navwidth{
+        width:1400px;
+        height:80px;
+        margin: 0px 0px 0px -150px;
+    }
+    .Logo {
+        margin: 0px 0px 0px 100px;
+    }
+    .Can{
+       
+        width:300px;
+        border:solid #e7e7f1;
+        border-radius:20px;
+        background-color:white;
+        height:400px;
+        margin: 50px 0px 0px -50px;
+    }
+    .Boys{
+        width:144px;
+        height:144px;
+        margin: 30px 0px 0px 80px;
+    }
+    .Font{
+        font-size:smaller;
+    }
+    .Main{
+        background-color:white;
+        height:950px;
+        width: 850px;
+        float:right;
+        border: solid 2px #e7e7f1;
+       
+        margin: -400px -50px 0px 0px;
+        border-radius:16px ;
+    }
+    .Field{
+        margin: 30px 0px 0px 50px;
+    }
+    .Name{
+        margin: 30px 0px 0px 0px;
+        font-weight:500;
+        font-size:14px;
+    }
+    .Word{
+        height:46px;
+        font-size:14px;
+        border-radius:15px;
+        border: solid 1px #e7e7f1;
+        padding:0px 0px 0px 40px ;
+        color: #717b9e;
+    }
+    .Textspan{
+        margin: 0px 0px 0px 0px;
+    }
+    .Well{
+        font-size:12px;
+        font-weight:500;
+        color: #717b9e;
+    }
+    .Netget{
+       
+    }
+    .Inner{
+        width:300px;
+        height:100px;
+        border: solid 1px #e7e7f1;
+        border-radius:20px;
+    }
+    .Innerdiv {
+        width: 300px;
+        height: 100px;
+        border: solid 1px #e7e7f1;
+        border-radius: 20px;
+        margin: -100px 0px 0px 310px;
+    }
+    .Work{
+        font-size:14px;
+        margin: 20px 0px 0px 20px;
+    }
+
+    .Works {
+        font-size: 14px;
+        color: #717b9e;
+        margin: 0px 0px 0px 20px;
+    }
+    .Img{
+        margin: 20px 20px 0px 0px;
+    }
+    .check{
+        margin: 20px 180px 0px 0px;
+        font-size:14px;
+        color: #717b9e;
+        font-weight:500;
+    }
+    .Boxes{
+        font-weight: 500;
+        font-size:14px;
+        margin: 20px 0px 0px 0px;
+    }
+    .Resume{
+       width:400px;
+        background-color:white;
+        border-radius: 20px;     
+        border:solid 1px #e7e7f1 ;
+        margin: 5px 0px 0px 0px;
+    }
+
+    .Upload {
+        margin: 3px 30px 0px 0px;
+              float:right;
+        color: #717b9e;
+        font-weight:500;
+        font-size:15px;
+    }
+    .Buttoncol{
+        background-color:#f05537;
+        border-radius:20px;
+        border-color:transparent;
+       color:white;
+       font-weight:500;
+       height:32px;
+       width:130px;
+       font-size:15px;
+       
+    }
+    .Notify{
+        font-size:12px;
+        font-weight:normal;
+        color: #717b9e;
+    }
+    .Whats{
+        margin: 25px 0px 0px 0px;
+        font-size:14px;
+        font-weight:500;
+    }
+    .You{
+        margin: 0px 0px 0px 60px;
+        font-size: smaller;
+    }
+    .Circle{
+        margin: 10px 0px 0px 40px;
+    }
+   .one{
+       font-weight:500;
+   }
+   .Clicking{
+       font-weight:400;
+       font-size:12px;
+        margin: 0px 0px 0px 0px;
+   }
+   .Nakuri{
+        margin: 20px 0px 0px 0px;
+   }
+   .Policy{
+        color: #275df5;
+   }
+   .Privacy{
+        color:#717b9e;
+   }
+   .Final{
+       width:124px;
+       height:30px;
+        background-color:blue;
+        font-size:14px;
+        font-weight:500;
+        color:white;
+        border:none;
+        border-radius:20px;
+        margin: 20px 0px 0px 0px;
+   }
+   .google{
+        border-left: solid 1px #b0c8ff;    
+       height:100px;
+        margin: -150px 0px 0px 600px;
+   }
+   .Stright{
+        border-left: solid 1px #b0c8ff;
+        height: 100px;
+        margin: -680px 0px 0px 600px;
+   }
+   .Delete{
+       font-size:16px;
+       font-weight:500;
+        margin: -30px 0px 0px 20px;
+   }
+    .venus {
+        height: 100px;
+        margin: 30px 0px 0px 610px;
+    }
+   .danger{
+        border-radius: 20px;
+       border:solid 1px ;
+       border-color:blue;
+       background-color:white;
+        font-size: 16px;
+        font-weight: 500;
+        margin: 10px 0px 0px 20px;
+        height:30px;
+        width:110px;
+   }
+   .Either{
+        margin: -130px 0px 0px 600px;
+        font-size:14px;
+        font-weight:500;
+        color: #b0c8ff;
+   }
+   .Return{
+       margin:0px 0px 0px -10px ;
+   }   
+</style>
+<nav class="navbar navbar-expand-lg navwidth navbar-toggleable-lg navbar-light  bg-white border-bottom box-shadow mb-4">
+    <div class="container-xxl">
+        <a>
+            <img class="Logo" src="/Images/Nakuri.png" />
+        </a>
+        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+            <ul class="navbar-nav flex-grow-2">
                 <li class="nav-item">
-                    <a class="Image">
-                        <img class="" src="~/Image/Logo.png" />
-                    </a>
+                    <a class="nav-link text-dark fw-normal Margin " asp-area="" asp-controller="Home" asp-action="Index">Already Registered?</a>
                 </li>
                 <li class="nav-item">
-                    <a >
-                        <input class="Search" type="search" placeholder="Search for products,brands and more"  />
-                    </a>
+                    <a class="nav-link text-primary fw-bold Return" asp-area="" asp-controller="Home" asp-action="Privacy">Login</a>
                 </li>
-                <li>
-                    <button class="Buttons">Login</button>
+                <li class="nav-item">
+                    <a class="nav-link text-black fw-normal Return" asp-area="" asp-controller="Home" asp-action="Privacy">here</a>
                 </li>
-                <li>
-                    <a>
-                        <p class="Textfont fw-bold">Become a Seller</p>
-                    </a>
-                </li>
-                <li class="Dropdown">
-                    
-                    <button class="btn text-white fw-bold  border-0 dropdown-toggle" data-bs-toggle="dropdown">More</button>
-                </li>
-              <li>
-                    <a><i class="fa-sharp fa-solid fa-cart-shopping fa-2xs" style="color: #001c40;"></i></a>
-                    <p class="text-white Carts fw-bold">Cart</p>
-              </li>
             </ul>
         </div>
-    </nav>
-    <nav class="navbar navbar-expand-xl Collection">
-            <div class="container-fluid">
-            <ul class="navbar-nav">
-                <li class="navbar-item grocery ">
-                    <a>
-                        <img class="arrange" src="~/Image/Gro.png" />
-                        <p class=" gro">Grocery</p>
-                    </a>
-                </li>
-                <li class="navbar-item ">
-                    <a>
-                        <img class="Lining" src="~/Image/Mobile.png" />
-                        <p class="mobile ">Mobiles</p>
-                    </a>
-                </li>
-                <li class="navbar-item ">
-                    <a>
-                        <img class="Lining" src="~/Image/Fashion.png" />
-                        <div class=" dropdown Fash">
-                            <p class="dropdown-toggle  " data-bs-toggle="dropdown">Fashion</p>
-                            <ul class="dropdown-menu">
-                                <li class="dropdown-item"><a style="font-size:14px;font-weight:bold">Fashion </a></li>
-                                <li class="dropdown-item"><a href=""> Mens Topwear </a></li>
-                                <li class="dropdown-item"><a href=""> Mens Bottom wear </a></li>
-                                <li class="dropdown-item"><a href=""> Womens Topwear </a></li>
-                                <li class="dropdown-item"><a href=""> Womens Bottonwear </a></li>
-                                <li class="dropdown-item"><a href=""> Jeans  </a></li>
-                                <li class="dropdown-item"><a href=""> Shirts </a></li>
-                                <li class="dropdown-item"><a href=""> Casuals </a></li>
-                                <li class="dropdown-item"><a href=""> Formals </a></li>
-                            </ul>
+    </div>
+</nav>
+<div class=" border-2 Can">
+  <a>
+        <img class="Boys" src="/Images/Boy.png" />
+  </a>
+  <a>
+      <p class="fs-6 one text-center m-3">On registering, you can</p>
+  </a>
+  <div class="navbar-nav">
+  <ul class="navbar-nav nav-item">
+      <li class="">
+                <i class="fa-solid fa-circle-check  Circle" style="color: #31a013;"> </i>
+                <span class="Font text-black fw-normal">Build your profile and let recruiters</span> 
+                <p class="You">find you</p>
+      </li>
+            <li class="">
+                <i class="fa-solid fa-circle-check Circle" style="color: #31a013;"> </i>
+                <span class="Font text-black fw-normal">Get job posting deliverd right to</span>
+                <p class="You"> your email</p>
+            </li>
+             <li class="">
+                <i class="fa-solid fa-circle-check Circle" style="color: #31a013;"> </i>
+                <span class="Font text-black fw-normal">Find your job and build your carrer</span>
+      </li>
+  </ul>          
+    </div>
+</div>
+    <div class="Main  box-shadow">
+        <div class="Field">
+            <h5 class="">Find your job & build your carrear</h5>
+            @using (Html.BeginForm("Register","Home",FormMethod.Post))
+            {
+            <div>
+                <p class="Name ">Full name</p>          
+                @Html.TextBoxFor(m=>m.Name,new {@class="Word w-75"})          
+           </div>
+            <div>
+                <p class="Name ">Email ID</p>
+                  
+                @Html.TextBoxFor(m=>m.Email,new {@class="Word w-75"})  
+            
                         </div>
-                    </a>
-                </li>
-                <li class="navbar-item">
-                    <a>
-                        <img class="Lining" src="~/Image/Electronics.png" />
-                        <div class=" dropdown">
-                            <p class="dropdown-toggle  Elec" data-bs-toggle="dropdown">Electronics</p>
-                            <ul class="dropdown-menu">
-                                <li class="dropdown-item"><a style="font-size:14px;font-weight:bold">Electronics </a></li>
-                                <li class="dropdown-item"><a href=""> Mobiles </a></li>
-                                <li class="dropdown-item"><a href=""> Laptop </a></li>
-                                <li class="dropdown-item"><a href=""> Headphones </a></li>
-                                <li class="dropdown-item"><a href=""> Earbuds </a></li>
-                                <li class="dropdown-item"><a href=""> Chargers  </a></li>
-                                <li class="dropdown-item"><a href=""> Datacables </a></li>
-                                <li class="dropdown-item"><a href=""> Fans </a></li>
-                                <li class="dropdown-item"><a href=""> Stablilizer </a></li>
-                            </ul>
-                        </div>
-                    </a>                
-                </li>
-                <li class="navbar-item">
-                    <a>
-                        <img class="Lining" src="~/Image/Furniture.png" />
-                                                <div class=" dropdown Fur">
-                            <p class="dropdown-toggle" data-bs-toggle="dropdown">Home & furniture</p>
-                            <ul class="dropdown-menu">
-                                <li class="dropdown-item"><a style="font-size:14px;font-weight:bold">Furniture Studio </a></li>
-                                <li class="dropdown-item"><a href=""> Home Dackor </a></li>
-                                <li class="dropdown-item"><a href=""> Workspace furniture </a></li>
-                                <li class="dropdown-item"><a href=""> Cleaning & Bath </a></li>
-                                <li class="dropdown-item"><a href=""> Furtinure Studio  </a></li>
-                                <li class="dropdown-item"><a href=""> Bedroom Furniture </a></li>
-                                <li class="dropdown-item"><a href=""> Tools & Utility </a></li>
-                                <li class="dropdown-item"><a href=""> Bedroom Furniture </a></li>
-                                <li class="dropdown-item"><a href=""> Kids Furniture </a></li>
-                            </ul>
-                        </div>
-                    </a>                
-                </li>
-                 <li class="navbar-item">
-                     <a>
-                        <img class="Lining" src="~/Image/App.png" />
-                        <p class="Appl">Appliances</p>
-                     </a>                  
-                </li>
-                <li class="navbar-item">
-                    <a>
-                        <img class="Lining" src="~/Image/Travel.png" />
-                        <p class=" Trav">Travel</p>
-                    </a>                  
-                </li>
-                <li class="navbar-item">
-                    <a>
-                        <img class="Lining" src="~/Image/Gift.png" />
-                        <p class=" Topo">Top Offers</p>
-                    </a>                  
-                </li>
-                <li class="navbar-item">
-                    <a>
-                        <img class="Twovhe" src="~/Image/Toys.png" />
-                                            <div class=" dropdown Beau">
-                        <p class="dropdown-toggle " data-bs-toggle="dropdown"> Beauty,Toys & More</p>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-item  "><a style="font-size:14px;font-weight:bold">Beauty & Persnol Care </a></li>
-                            <li class="dropdown-item"><a href=""> Men's Grooming </a></li>
-                            <li class="dropdown-item"><a href=""> Foods & Drinks </a></li>
-                            <li class="dropdown-item"><a href=""> Nutrition & Health </a></li>
-                            <li class="dropdown-item"><a href=""> Baby Care  </a></li>
-                            <li class="dropdown-item"><a href=""> Toys & School Supplies  </a></li>
-                            <li class="dropdown-item"><a href=""> Books </a></li>
-                            <li class="dropdown-item"><a href=""> Music </a></li>
-                            <li class="dropdown-item"><a href=""> Sportd & Fitness </a></li>
-                        </ul>
+            <div class="Well">We'll send you relevant jobs in your mail</div>
+            <div>
+                <p class="Name ">Password</p>
+                 
+            @Html.TextBoxFor(m=>m.Pass,new {@class="Word w-75"})
+            </div>
+            <div class="Well">Minimum 6 characters required</div>
+            <div>
+                <p class="Name ">Mobile number</p>
+            
+                @Html.TextBoxFor(m=>m.Phone,new {@class="Word w-75"});                      
+            </div>           
+            <div class="Well">Recruiters will call you on this number</div>
+            <p class="Name">Work status</p>
+            <div class="Netget nav-item navbar-nav">
+                <div class="Inner bg-white  ">
+                    <div class="float-end Img">
+                        <img src="/Images/Bags.png" />
                     </div>
-                    </a>                
-                </li>
-                <li class="navbar-item">
-                    <a>
-                        <img class="Wheel" src="~/Image/Two.png" />
-                        <div class="dropdown Twowh">
-                            <p class="dropdown-toggle " data-bs-toggle="dropdown">Two Wheelers</p>
-                            <ul class="dropdown-menu ">
-                                <li class="dropdown-item"><a href=""> Petrol Vechiles </a></li>
-                                <li class="dropdown-item"><a href=""> Electrical Vechiles </a></li>
-                            </ul>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-            </div>
-    </nav>
-    <div id="demo" class="carousel slide Casrole" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="~/Image/Upper.jpg" alt="Los Angeles" class="d-block" style="width:100%">
-            </div>
-            <div class="carousel-item">
-                <img src="~/Image/Getnow.png" alt="Chicago" class="d-block" style="width:100%">
-            </div>
-            <div class="carousel-item">
-                <img src="~/Image/Tele.png" alt="New York" class="d-block" style="width:100%">
+                    <div>
+                            <h6 class="Work"> I'm experienced</h6>
+                        <p class="Works">
+                            I have work experience<br />(excluding internships)
+                        </p>
+                    </div>
+                </div>
+                 <div class="Innerdiv bg-white  ">
+                    <div class="float-end Img">
+                        <img src="/Images/Book.jpg" />
+                    </div>
+                    <div>
+                        <h6 class="Work">I'm a fresher</h6>
+                        <p class="Works">
+                            I am a student/ Haven't worked<br />after graduation
+                        </p>
+                    </div>
+                <div>
+                </div>
             </div>
         </div>
-        <button class="carousel-control-prev Casrole " type="button" data-bs-target="#demo" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon casbut "></span>
+        <p class="Boxes">Resume</p>
+        <div class="Resume">
+            <div>
+                <button class="Buttoncol">Upload Resume</button>
+                <p class="Upload">DOC, DOCx, PDF, RTF | Max: 2 MB</p>
+            </div>         
+        </div>
+        <div class="Notify">Recruiters give first preference to candidates who have a resume</div>
+        <div class="Whats">
+      <input type="checkbox"  />
+      <span>Send me Important updates on</span>
+      <span><img src="/Images/Screenshot 2023-07-13 131447.png" /></span>
+      <span>WhatsApp</span>
+        </div>
+        <div class="Nakuri">
+            <span class="Clicking Privacy">By clicking Register, you agree to the </span>
+            <span class="Clicking Policy">Tearms and Condition</span>
+            <span class="Clicking Privacy">&</span>
+            <span class="Clicking Policy">Privacy Policy </span>
+            <span class="Clicking Privacy">of Nakuri.com</span>
+        </div>
+        <form method="post" action="/Home/Register">
+            <input type="submit" class="Final" value="Registers Now" />
+        </form>
+        }
+        <div class="Stright">
+        </div>
+        <div class="Either">Or</div>
+        <div class="google">
+        </div>     
+        <div class="venus">
+        <p class="Delete">Continue with</p>
+        <button class="danger">
+            <span class=""><img src="~/Images/Screenshot 2023-07-13 154928.png" /></span>
+            <span class="text-primary">Google</span>
         </button>
-        <button class="carousel-control-next Casrole" type="button" data-bs-target="#demo" data-bs-slide="next">
-            <span class="carousel-control-next-icon casLeft"></span>
-        </button>
-   </div>
-    <nav class="navbar navbar-expand-xl Prod bg-white">
-        <div class="container-fluid">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class=" Mars">
-                        <h2 class="Lost">Best of<br />Electronics</h2>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a>
-                        <img class="Cam" src="~/Image/Camera.jpeg" />
-                        <p class="Offer">Cameras</p>
-                    </a>
-                </li>
-                <li>
-                    <a>
-                        <img class="Trim" src="~/Image/Samsung.jpeg" />
-                        <p class="Pia"></p>
-                    </a>
-                </li>
-                <li>
-                    <a>
-                        <img class="Trim" src="~/Image/Full.jpeg" />
-                        <p class="Offer">Moniters</p>
-                    </a>
-                </li>
-                <li class="Dropdown">
-                    <a>
-                        <img class="Trim" src="~/Image/Electric.jpeg" />
-                        <p class="Offer">Electric Cycle</p>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
- 
-</body>
-</html>
+        </div> 
+    </div>
+</div>
+
+
+
+
+                   
+                
+                        
+              
+            
+                   
 
 
